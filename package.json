@@ -6,10 +6,13 @@
   "dependencies": {
     "jest": "^24.9.0"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^6.7.2"
+  },
   "scripts": {
-    "test": "jest",
-    "test:watch": "npm run test -- --watch"
+    "test": "jest --verbose --coverage",
+    "test:watch": "npm run test -- --watchAll",
+    "lint": "eslint '**/*.js'"
   },
   "repository": {
     "type": "git",
